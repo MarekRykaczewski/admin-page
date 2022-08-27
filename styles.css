@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 body {
     margin: 0;
     padding: 0;
+    font-family: Roboto;
 }
 
 #main {
@@ -16,6 +19,35 @@ body {
 #sidebar {
     grid-column: span 1;
     grid-row: span 4;
-    background-color: aquamarine;
-    
+    background-color: rgb(49, 55, 230);
+    padding-left: 15px;
+}
+
+#side-items {
+    color: white;
+    font-size: 2em;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-left: 20px;
+
+}
+
+.side-item {
+    display: flex;
+    gap: 10px;
+    /* image gets stretched without below */
+    align-items: center;
+}
+
+#logo {
+    height: 5vh;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    color: white;
+    font-size: 3em;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
 }
