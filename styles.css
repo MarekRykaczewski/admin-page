@@ -50,3 +50,50 @@ body {
     align-items: center;
     padding: 20px;
 }
+
+#navbar {
+    background-color: white;
+    grid-column: 2 / span 4;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding-left: 50px;
+    padding-right: 50px;
+
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2, auto);
+}
+
+#navbar-top-left {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+#navbar-top-left img{
+    height: 40px;
+}
+
+#navbar-top-right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 30px;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+#dog-picture {
+    object-fit: cover;
+    overflow: hidden;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+#search-box {
+    border-radius: 15px;
+    width: 50vh;
+    height: 40px;
+    background-color: rgb(183, 183, 183);
+}
