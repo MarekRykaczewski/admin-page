@@ -126,6 +126,29 @@ body {
     border-radius: 20px;
     width: 30vw;
     height: 40px;
-    background-color: rgb(183, 183, 183);
+    background-color: #e2e8f0;
     margin-right: 50px;
+}
+
+#project-area {
+
+    padding: 20px;
+    grid-column: span 3;
+    grid-row: span 3;
+    background-color: #e2e8f0;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(3, auto);
+    gap: 40px;
+
+}
+
+.project {
+    background-color: white;
+    border: 0;
+    border-radius: 20px;
+    padding: 10px;
+    height: auto;
+    width: auto;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
