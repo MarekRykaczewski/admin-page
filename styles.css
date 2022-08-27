@@ -9,8 +9,10 @@ body {
 #main {
 
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(4, 25%);
+    /* grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(4, 25%); */
+    grid-template-columns: 15% repeat(4, auto);
+    grid-template-rows: 20% repeat(3, auto);
     height: 100vh;
     width: 100vw
     
@@ -19,7 +21,7 @@ body {
 #sidebar {
     grid-column: span 1;
     grid-row: span 4;
-    background-color: rgb(49, 55, 230);
+    background-color: #1992d4;
     padding-left: 1vw;
     padding-right: 1vw;
 }
@@ -70,16 +72,45 @@ body {
     gap: 20px;
 }
 
-#navbar-top-left img{
-    height: 40px;
-}
-
 #navbar-top-right {
     display: flex;
     align-items: center;
     justify-content: flex-end;
     gap: 30px;
     font-size: 1.5em;
+    font-weight: bold;
+}
+
+#navbar-bottom-left {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+    font-weight: bold;
+}
+
+#navbar-bottom-left span {
+    font-size: 1.4em;
+}
+
+
+#navbar-bottom-right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 30px;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+#navbar-bottom-right button{
+    background-color: #1992d4;
+    border: 0;
+    border-radius: 20px;
+    color: white;
+    height: 40px;
+    width: 100px;
+    font-size: 0.6em;
     font-weight: bold;
 }
 
@@ -92,7 +123,7 @@ body {
 }
 
 #search-box {
-    border-radius: 15px;
+    border-radius: 20px;
     width: 50vh;
     height: 40px;
     background-color: rgb(183, 183, 183);
