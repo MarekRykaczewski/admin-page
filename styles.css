@@ -20,7 +20,8 @@ body {
     grid-column: span 1;
     grid-row: span 4;
     background-color: rgb(49, 55, 230);
-    padding-left: 15px;
+    padding-left: 1vw;
+    padding-right: 1vw;
 }
 
 #side-items {
@@ -41,13 +42,11 @@ body {
 }
 
 #logo {
-    height: 5vh;
     display: flex;
     flex-direction: row;
     gap: 10px;
     color: white;
     font-size: 3em;
-    padding-top: 20px;
-    padding-left: 20px;
-    padding-bottom: 20px;
+    align-items: center;
+    padding: 20px;
 }
