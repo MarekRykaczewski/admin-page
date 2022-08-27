@@ -11,8 +11,8 @@ body {
     display: grid;
     /* grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(4, 25%); */
-    grid-template-columns: 15% repeat(4, auto);
-    grid-template-rows: 20% repeat(3, auto);
+    grid-template-columns: minmax(330px, 380px) repeat(4, auto);
+    grid-template-rows: minmax(100px, 200px)  repeat(3, auto);
     height: 100vh;
     width: 100vw
     
@@ -28,7 +28,7 @@ body {
 
 #side-items {
     color: white;
-    font-size: 2em;
+    font-size: 1.5em;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -48,7 +48,7 @@ body {
     flex-direction: row;
     gap: 10px;
     color: white;
-    font-size: 3em;
+    font-size: 2.5em;
     align-items: center;
     padding: 20px;
 }
@@ -124,7 +124,8 @@ body {
 
 #search-box {
     border-radius: 20px;
-    width: 50vh;
+    width: 30vw;
     height: 40px;
     background-color: rgb(183, 183, 183);
+    margin-right: 50px;
 }
