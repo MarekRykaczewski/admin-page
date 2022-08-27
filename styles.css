@@ -4,6 +4,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: Roboto;
+    background-color: #e2e8f0;
 }
 
 #main {
@@ -12,7 +13,7 @@ body {
     /* grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(4, 25%); */
     grid-template-columns: minmax(330px, 380px) repeat(4, auto);
-    grid-template-rows: minmax(100px, 200px)  repeat(3, auto);
+    grid-template-rows: minmax(175px, 200px)  repeat(3, auto);
     height: 100vh;
     width: 100vw
     
@@ -59,7 +60,7 @@ body {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     padding-left: 50px;
     padding-right: 50px;
-
+    height: auto;
     display: grid;
     grid-template-columns: repeat(2, auto);
     grid-template-rows: repeat(2, auto);
@@ -131,16 +132,21 @@ body {
 }
 
 #project-area {
-
-    padding: 20px;
+    padding-left: 50px;
+    padding-top: 20px;
     grid-column: span 3;
     grid-row: span 3;
-    background-color: #e2e8f0;
     display: grid;
-    grid-template-columns: repeat(2, auto);
-    grid-template-rows: repeat(3, auto);
+    width: 50vw;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 20px repeat(auto-fit, 400px);
     gap: 40px;
+}
 
+#project-area p {
+    font-size: large;
+    grid-column: span 3;
+    font-weight: bold;
 }
 
 .project {
@@ -151,4 +157,13 @@ body {
     height: auto;
     width: auto;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.project p {
+    padding: 15px;
+}
+
+.project p span {
+    color: grey;
+    font-weight: 400;
 }
