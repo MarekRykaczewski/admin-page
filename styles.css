@@ -230,3 +230,11 @@ body {
 hr.solid {
     border-top: 3px solid #bbb;
   }
+
+#credits {
+    left: 1%;
+    bottom: 1%;
+    position: absolute;
+    color: white;
+    font-family: Roboto;
+}
