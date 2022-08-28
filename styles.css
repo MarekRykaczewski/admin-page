@@ -7,10 +7,6 @@ body {
     background-color: #e2e8f0;
 }
 
-.heading {
-    font-size: 25px;
-}
-
 #main {
 
     display: grid;
@@ -181,7 +177,7 @@ body {
     display: grid;
     width: 20vw;
     grid-template-columns: 1fr;
-    grid-template-rows: 20px 400px 20px 200px;
+    grid-template-rows: 20px 400px 20px 420px;
     gap: 40px;
 }
 
@@ -197,7 +193,7 @@ body {
     border: 0;
     border-radius: 20px;
     padding: 10px;
-    height: fit-content;
+    height: auto;
     width: auto;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 
